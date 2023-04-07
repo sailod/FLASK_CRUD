@@ -1,3 +1,17 @@
+This is a simple web trading platform written with Flask
+The goal was to create simple RESTful API using Flask and SQLAlchemy for managing BTC trading requests. 
+The API manage requests for just buying assets (eg. BTC) and has the following operations:
+createAccount(name, usd_balance): Creates an account on the application with 0
+BTC.
+fetchAccountDetails(account_id): Fetches account details.
+createLimitOrder(account_id, price_limit, amount): Creates a limit order, waiting to
+be executed when the price limit is reached.
+fetchOrderDetails(order_id): Fetches order details and status.
+The limit orders created execute (be marked as processed) as soon as the market
+price (given by exchange.py) is lower than the price limit set in the order and the account
+details reflect the new USD balance and BTC balance.
+
+
 ### Install
 
 ```
