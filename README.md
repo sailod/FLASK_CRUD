@@ -52,5 +52,5 @@ curl --location --request POST 'http://127.0.0.1:5001/order' \
 ```
 get order:
 ```
-curl --location --request GET 'http://127.0.0.1:5000/order?id=1'
+curl --location --request GET 'http://127.0.0.1:5001/order?id=1'
 ```
